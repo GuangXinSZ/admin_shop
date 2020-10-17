@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import MRoute from './routes/index';
 import * as serviceWorker from './serviceWorker';
 
 // 引入antd.css
@@ -8,7 +8,7 @@ import 'antd/dist/antd.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MRoute />
   </React.StrictMode>,
   document.getElementById('root')
 );
