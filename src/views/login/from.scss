@@ -1,0 +1,21 @@
+.formInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f3f3f3;
+
+  .form_content {
+    width: 350px;
+    background: white;
+    border-radius: 5%;
+  }
+  .login-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .header_title {
+      padding: 20px 0;
+    }
+  }
+}
