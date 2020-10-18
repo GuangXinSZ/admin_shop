@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Layout, Menu } from 'antd';
 import { Link } from 'react-router-dom';
+import { HomeOutlined, MenuUnfoldOutlined, LineChartOutlined, FileAddOutlined, UploadOutlined, RadiusSettingOutlined } from '@ant-design/icons';
 
 const { Sider } = Layout;
 const SubMenu = Menu.SubMenu;
@@ -65,24 +66,24 @@ export default class SiderCustom extends Component {
         >
 
           <Menu.Item key={"/app"}>
-            <Link to={"/app"}><span>首页</span></Link>
+            <Link to={"/app"}><HomeOutlined twoToneColor="#eb2f96"></HomeOutlined><span>首页</span></Link>
           </Menu.Item>
           <Menu.Item key={"/app/form"}>
-            <Link to={"/app/form"}><span>表单</span></Link>
+            <Link to={"/app/form"}><MenuUnfoldOutlined /><span>表单</span></Link>
           </Menu.Item>
           <SubMenu
             key="/app/chart"
-            title={<span><span>图表</span></span>}
+            title={<span><span><LineChartOutlined />图表</span></span>}
           >
             <Menu.Item key="/app/chart/echarts">
-              <Link to={'/app/chart/echarts'}><span>echarts</span></Link>
+              <Link to={'/app/chart/echarts'}> <RadiusSettingOutlined /><span>echarts</span></Link>
             </Menu.Item>
           </SubMenu>
           <Menu.Item key="/app/richText">
-            <Link to={'/app/richText'}><span>富文本</span></Link>
+            <Link to={'/app/richText'}> <FileAddOutlined /> <span>富文本</span></Link>
           </Menu.Item>
           <Menu.Item key="/app/upload">
-            <Link to={'/app/upload'}><span>文件上传</span></Link>D
+            <Link to={'/app/upload'}><UploadOutlined /><span>文件上传</span></Link>D
           </Menu.Item>
         </Menu>                                                                             
       </Sider>
