@@ -52,7 +52,7 @@ class NormalLoginForm extends Component {
                 { pattern: /^[a-zA-Z0-9_]+$/, message: '用户名必须是英文、数字或下划线组成' }
               ]}
             >
-              <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
+              <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="用户名" />
             </Form.Item>
             <Form.Item
               name="password"
@@ -65,7 +65,7 @@ class NormalLoginForm extends Component {
               <Input
                 prefix={<LockOutlined className="site-form-item-icon" />}
                 type="password"
-                placeholder="Password"
+                placeholder="密码"
               />
             </Form.Item>
             <Form.Item>
